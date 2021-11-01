@@ -1,0 +1,34 @@
+//------------------------------------
+// # Sidebar
+//------------------------------------
+
+.sidebar
+  position: sticky
+  position: -webkit-sticky
+  inset: 0
+  display: block
+  width: 100%
+  height: calc(100vh - 136px)
+
+.nav
+  list-style: none
+
+.nav__link
+  position: relative
+  display: block
+  color: white
+  text-decoration: none
+  transition: padding-left 100ms linear
+  &:hover,
+  &:focus
+    padding-left: .5rem
+    color: $text
+  &::before
+    content: ""
+  &:hover::before
+    position: absolute
+    top: 0
+    left: 0
+    width: 2px
+    height: 100%
+    background-color: white

@@ -1,0 +1,14 @@
+<aside class="sidebar" role="complementary">
+  <h3>
+    Snippets
+  </h3>
+  <nav class="nav">
+    <% data.snippets.snippets.each do |s| %>
+      <li class="mb--1">
+        <a href="#<%= s.link %>" class="nav__link">
+          <%= s.title %>
+        </a>
+      </li>
+    <% end %>
+  </nav>
+</aside>
