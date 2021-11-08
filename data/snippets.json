@@ -1,0 +1,110 @@
+{
+  "snippets": [
+    {
+      "id": "uploader",
+      "link": "uploader",
+      "title": "Uploader",
+      "desc": "When user upload avatar can preview uploaded image",
+      "action": "avatar",
+      "html": "avatar--erb",
+      "javascript": "avatar--js"
+    },
+    {
+      "id": "countLengthOfValue",
+      "link": "countLengthOfValue",
+      "title": "Count length of value",
+      "desc": "Counting characters in textarea and displaying with special warning CSS class.",
+      "action": "textarea",
+      "html": "textarea--erb",
+      "javascript": "textarea--js"
+    },
+    {
+      "id": "dropdown",
+      "link": "dropdown",
+      "title": "Dropdrown without JavaScript",
+      "desc": "Simplest way to create dropdown",
+      "action": "dropdown",
+      "html": "dropdown--erb",
+      "javascript": "dropdown--js"
+    },
+    {
+      "id": "dialog",
+      "link": "dialog",
+      "title": "Dialog",
+      "desc": "Dialog component uses details HTML tag to create a dialog window. We added a plain style here so you can code your own style on it.",
+      "action": "dialog",
+      "html": "dialog--erb",
+      "javascript": "dialog--js"
+    },
+    {
+      "id": "lightbox",
+      "link": "lightbox",
+      "title": "Lightbox",
+      "desc": "Preview images in the modal. **This component uses Tailwind CSS framework",
+      "action": "lightbox",
+      "html": "lightbox--erb",
+      "partial": "lightbox--partial",
+      "javascript": "lightbox--js"
+    },
+    {
+      "id": "toaster",
+      "link": "toaster",
+      "title": "Toaster",
+      "desc": "This toaster created for beatfuil flash messages in Rails.",
+      "action": "toaster",
+      "html": "toaster--erb",
+      "partial": "toaster--partial",
+      "helper": "toaster--helper",
+      "javascript": "toaster--js"
+    },
+    {
+      "id": "validation",
+      "link": "validation",
+      "title": "Validation",
+      "desc": "A beatfuil validation for Rails",
+      "action": "validation",
+      "html": "validation--erb",
+      "javascript": "validation--js"
+    },
+    {
+      "id": "accordion",
+      "link": "accordion",
+      "title": "Accordion",
+      "desc": "A beatfuil accordion for Rails",
+      "action": "accordion",
+      "html": "accordion--erb",
+      "partial": "accordion--partial",
+      "javascript": "accordion--js"
+    },
+    {
+      "id": "alert",
+      "link": "alert",
+      "title": "Alert",
+      "desc": "A beatfuil alert for Rails",
+      "action": "alert",
+      "html": "alert--erb",
+      "partial": "alert--partial",
+      "helper": "alert--helper",
+      "javascript": "alert--js"
+    },
+    {
+      "id": "notification",
+      "link": "notification",
+      "title": "Notification",
+      "desc": "A beatfuil notification for Rails",
+      "action": "notification",
+      "html": "notification--erb",
+      "partial": "notification--partial",
+      "javascript": "notification--js"
+    },
+    {
+      "id": "tooltip",
+      "link": "tooltip",
+      "title": "Tooltip",
+      "desc": "A beatfuil tooltip for Rails",
+      "action": "tooltip",
+      "html": "tooltip--erb",
+      "javascript": "tooltip--js"
+    }
+  ]
+}

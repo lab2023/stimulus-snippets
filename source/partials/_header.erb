@@ -1,0 +1,23 @@
+<header role="banner">
+  <article class="container pt--2 pb--2 align-items--center justify-content--space-between d--flex">
+    <div>
+      <h1 class="mb--0 mt--0">
+        <a href="#" class="text--white">
+          💎 Stimulus Snippets
+        </a>
+      </h1>
+      <small>
+        From lab2023
+      </small>
+    </div>
+    <div class="form__group d--flex align-items--center">
+      <svg with="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      <input list="snippets" id="snippetsInput" class="form__control" name="snippetsList" placeholder="Jump to ..." />
+    </div>
+    <datalist id="snippets">
+      <% data.snippets.snippets.each do |s| %>
+        <option value="<%= s.title %>" data-id="<%= s.id %>">
+      <% end %>
+    </datalist>
+  </article>
+</header>

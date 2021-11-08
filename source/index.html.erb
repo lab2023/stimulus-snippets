@@ -1,0 +1,93 @@
+<% @page_title= 'Stimulus Snippets' %>
+<% @page_classes= 'page-home' %>
+
+<main role="main" class="container d--grid main">
+
+  <%= partial "partials/sidebar" %>
+
+  <section aria-label="Snippets list">
+
+    <% data.snippets.snippets.each do |s| %>
+      <article id="<%= s.id %>" class="scroll-margin mb--4">
+        <h1>
+          <a href="#<%= s.link %>" class="text--white jump-link">
+            <%= s.title %>
+          </a>
+        </h1>
+        <p>
+          <%= s.desc %>
+        </p>
+        <div aria-label="Preview">
+          <h4>
+            On Action
+          </h4>
+          <div class="bg--highlight">
+            <img src="assets/images/<%= s.action %>.webp" alt="<%= s.title %>" loading="lazy">
+          </div>
+        </div>
+        <% if s.html != "" %>
+          <div aria-label="HTML section">
+            <h4>
+              HTML
+            </h4>
+            <div class="pos--relative">
+              <button class="btn btn--copy js-btn-copy" data-tooltip="Copied!">
+                <svg class="icon icon--middle" width="14" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg>
+              </button>
+              <div aria-label="HTML snippet">
+                <%= partial "partials/snippets/#{s.html}" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <% if s.partial? %>
+          <div aria-label="HTML section">
+            <h4>
+              Partial
+            </h4>
+            <div class="pos--relative">
+              <button class="btn btn--copy js-btn-copy" data-tooltip="Copied!">
+                <svg class="icon icon--middle" width="14" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg>
+              </button>
+              <div aria-label="Partial snippet">
+                <%= partial "partials/snippets/#{s.partial}" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <% if s.helper? %>
+          <div aria-label="HTML section">
+            <h4>
+              Helper
+            </h4>
+            <div class="pos--relative">
+              <button class="btn btn--copy js-btn-copy" data-tooltip="Copied!">
+                <svg class="icon icon--middle" width="14" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg>
+              </button>
+              <div aria-label="Partial snippet">
+                <%= partial "partials/snippets/#{s.helper}" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <% if s.javascript != "" %>
+          <div aria-label="JavaScript section">
+            <h4>
+              JavaScript
+            </h4>
+            <div class="pos--relative">
+              <button class="btn btn--copy js-btn-copy" data-tooltip="Copied!">
+                <svg class="icon icon--middle" width="14" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg>
+              </button>
+              <div aria-label="JavaScript snippet">
+                <%= partial "partials/snippets/#{s.javascript}" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </article>
+    <% end %>
+
+  </section>
+
+</main>
