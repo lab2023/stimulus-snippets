@@ -5,7 +5,7 @@
       "link": "uploader",
       "title": "Uploader",
       "desc": "When user upload avatar can preview uploaded image",
-      "action": "avatar",
+      "action": "avatar.webp",
       "html": "avatar--erb",
       "javascript": "avatar--js"
     },
@@ -14,7 +14,7 @@
       "link": "countLengthOfValue",
       "title": "Count length of value",
       "desc": "Counting characters in textarea and displaying with special warning CSS class.",
-      "action": "textarea",
+      "action": "textarea.webp",
       "html": "textarea--erb",
       "javascript": "textarea--js"
     },
@@ -23,7 +23,7 @@
       "link": "dropdown",
       "title": "Dropdrown without JavaScript",
       "desc": "Simplest way to create dropdown",
-      "action": "dropdown",
+      "action": "dropdown.webp",
       "html": "dropdown--erb",
       "javascript": "dropdown--js"
     },
@@ -32,7 +32,7 @@
       "link": "dialog",
       "title": "Dialog",
       "desc": "Dialog component uses details HTML tag to create a dialog window. We added a plain style here so you can code your own style on it.",
-      "action": "dialog",
+      "action": "dialog.webp",
       "html": "dialog--erb",
       "javascript": "dialog--js"
     },
@@ -41,7 +41,7 @@
       "link": "lightbox",
       "title": "Lightbox",
       "desc": "Preview images in the modal. **This component uses Tailwind CSS framework",
-      "action": "lightbox",
+      "action": "lightbox.webp",
       "html": "lightbox--erb",
       "partial": "lightbox--partial",
       "javascript": "lightbox--js"
@@ -51,7 +51,7 @@
       "link": "toaster",
       "title": "Toaster",
       "desc": "This toaster created for beatfuil flash messages in Rails.",
-      "action": "toaster",
+      "action": "toaster.webp",
       "html": "toaster--erb",
       "partial": "toaster--partial",
       "helper": "toaster--helper",
@@ -62,7 +62,7 @@
       "link": "validation",
       "title": "Validation",
       "desc": "A beatfuil validation for Rails",
-      "action": "validation",
+      "action": "validation.webp",
       "html": "validation--erb",
       "javascript": "validation--js"
     },
@@ -71,7 +71,7 @@
       "link": "accordion",
       "title": "Accordion",
       "desc": "A beatfuil accordion for Rails",
-      "action": "accordion",
+      "action": "accordion.webp",
       "html": "accordion--erb",
       "partial": "accordion--partial",
       "javascript": "accordion--js"
@@ -81,7 +81,7 @@
       "link": "alert",
       "title": "Alert",
       "desc": "A beatfuil alert for Rails",
-      "action": "alert",
+      "action": "alert.webp",
       "html": "alert--erb",
       "partial": "alert--partial",
       "helper": "alert--helper",
@@ -92,7 +92,7 @@
       "link": "notification",
       "title": "Notification",
       "desc": "A beatfuil notification for Rails",
-      "action": "notification",
+      "action": "notification.webp",
       "html": "notification--erb",
       "partial": "notification--partial",
       "javascript": "notification--js"
@@ -102,7 +102,7 @@
       "link": "tooltip",
       "title": "Tooltip",
       "desc": "A beatfuil tooltip for Rails",
-      "action": "tooltip",
+      "action": "tooltip.webp",
       "html": "tooltip--erb",
       "javascript": "tooltip--js"
     },
@@ -111,9 +111,19 @@
       "link": "slider",
       "title": "Slider",
       "desc": "Basic stimulus slider.",
-      "action": "slider",
+      "action": "slider.webp",
       "html": "slider--erb",
       "javascript": "slider--js"
+    },
+        {
+      "id": "tab",
+      "link": "tab",
+      "title": "Tab",
+      "desc": "Basic stimulus tab menu.",
+      "action": "tab.png",
+      "html": "tab--erb",
+      "javascript": "tab--js",
+      "css": "tab--css"
     }
   ]
 }
