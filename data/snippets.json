@@ -105,6 +105,15 @@
       "action": "tooltip",
       "html": "tooltip--erb",
       "javascript": "tooltip--js"
+    },
+    {
+      "id": "slider",
+      "link": "slider",
+      "title": "Slider",
+      "desc": "Basic stimulus slider.",
+      "action": "slider",
+      "html": "slider--erb",
+      "javascript": "slider--js"
     }
   ]
 }
